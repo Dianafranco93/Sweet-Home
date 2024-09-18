@@ -1,0 +1,848 @@
+/* estilos gnerales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*estilos contenido barra del logo*/
+.container-inicio {
+  background-color: rgba(253, 249, 249, 0.7843137255);
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.container-inicio .inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.container-inicio .inicio img {
+  width: 100px;
+  margin: 10px;
+}
+.container-inicio .container-logo {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.container-inicio .contenedor-soporte {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 0;
+}
+.container-inicio .container-usuario {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.container-inicio .container-usuario .fa-user {
+  font-size: 1rem;
+  color: #141313;
+  padding-right: 0.5rem;
+  border-right: 1px solid;
+}
+.container-inicio .container-usuario .fa-cart-flatbed-suitcase {
+  font-size: 1rem;
+  color: #141313;
+  padding-right: 0.5rem;
+  border-right: 1px solid;
+}
+.container-inicio .container-usuario .contenedor-carrito {
+  gap: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* estilos navbar*/
+.barra {
+  background-color: #eae3e3;
+  height: 115px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 20px;
+  /*estilos buscador*/
+}
+.navbar .fa-bars {
+  font-display: none;
+}
+.navbar .menu {
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 3px solid #c0b7b7;
+  border-radius: 2rem;
+  background-color: azure;
+  height: 2rem;
+  overflow: hidden;
+}
+.navbar .search input {
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+  width: 15rem;
+  color: black;
+  cursor: pointer;
+}
+.navbar .search .btn-search {
+  border: none;
+  background-color: rgba(97, 95, 95, 0.7176470588);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+}
+.navbar .search .btn-search i {
+  font-size: 1.4rem;
+  color: rgba(240, 248, 255, 0.888);
+}
+
+/*estilos portada*/
+.banner {
+  background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5254901961), rgba(0, 0, 32, 0.168627451)), url(../img/living-room-8578263_1280.jpg);
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.banner .contenedor-banner {
+  max-width: 15rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.banner .contenedor-banner .titulo-1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+}
+.banner .contenedor-banner p {
+  color: #eae3e3;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.banner .contenedor-banner h2 {
+  color: #eae3e3;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.banner .contenedor-banner a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #3e3c3c;
+  background-color: #f0eded;
+  display: inline-block;
+  padding: 0.2rem 1.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    height: 250px;
+  }
+  .banner .contenedor-banner {
+    width: 100%;
+    height: auto;
+  }
+  .banner .contenedor-banner p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 450;
+  }
+  .banner .contenedor-banner h2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .banner .contenedor-banner a {
+    margin-top: 1px;
+    padding: auto;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+}
+/*estilos main contenido*/
+.main-contenedor {
+  background-color: rgba(234, 227, 227, 0.4078431373);
+  margin: 30px auto;
+  /* Estilos caracteristicas*/
+}
+.main-contenedor .container-servicio {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  margin-right: 3rem;
+}
+.main-contenedor .container-servicio .card-servicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 1rem 0;
+}
+.main-contenedor .container-servicio .card-servicio i {
+  font-size: 1.5rem;
+  color: #4e4b4b;
+}
+.main-contenedor .container-servicio .card-servicio .servicio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-contenedor .container-servicio .card-servicio .servicio-content span {
+  font-weight: 700;
+  font-family: 1.2rem;
+  color: #232121;
+}
+.main-contenedor .container-servicio .card-servicio .servicio-content p {
+  color: #242121;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  #contenedor-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  #contenedor-cards {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* Estilos mas vendidos inicio*/
+.mas-vendidos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+.mas-vendidos .container-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.mas-vendidos .container-categories .card-category {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  gap: 2rem;
+}
+.mas-vendidos .container-categories .card-category p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #e6e0e0;
+  position: relative;
+}
+.mas-vendidos .container-categories .card-category span {
+  font-size: 1.5rem;
+  color: #fbf8f8;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.mas-vendidos .container-categories .card-category span :hover {
+  color: rgba(251, 248, 248, 0.6431372549);
+}
+.mas-vendidos .container-categories .category-muebles {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843)), url(../img/sala-cuero.png);
+  background-size: center;
+  background-position: bottom;
+}
+.mas-vendidos .container-categories .category-alcobas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843)), url(../img/Copia\ de\ cama-base.jpg);
+  background-size: center;
+  background-position: bottom;
+}
+.mas-vendidos .container-categories .category-comedores {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843)), url(../img/comedor-clas.jpg);
+  background-size: center;
+  background-position: bottom;
+}
+
+/* Estilos maejores productos*/
+.mejores-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.mejores-productos .container-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.mejores-productos .container-opciones span {
+  color: #777;
+  background-color: #e6e0e0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.mejores-productos .container-opciones span :hover {
+  background-color: #b0a7a7;
+  color: rgba(97, 95, 95, 0.7176470588);
+}
+.mejores-productos .container-opciones span .active {
+  background-color: #ccc3c3;
+  color: rgba(97, 95, 95, 0.7176470588);
+}
+
+/*Gallery-mini*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 15rem);
+  gap: 1rem;
+  margin-bottom: 30px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .gallery-img-3 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+/* Estilos cards*/
+#contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 2rem auto;
+}
+#contenedor-cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: auto;
+  border: 6px solid rgba(97, 95, 95, 0.7176470588);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px #3b380f 0, 0, 0, 0.1;
+  display: inline-block;
+  margin: 1rem auto;
+}
+#contenedor-cards .card .card__img1 {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgba(97, 95, 95, 0.431372549);
+  border-radius: 0.5rem;
+  background-image: url(../img.html/molde-bb.jpeg);
+}
+#contenedor-cards .card .card__img2 {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgba(97, 95, 95, 0.7176470588);
+  border-radius: 0.5rem;
+  background-image: url(../img.html/soja.jpeg);
+}
+#contenedor-cards .card .card__img3 {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgba(97, 95, 95, 0.7176470588);
+  border-radius: 0.5rem;
+  background-image: url(../img.html/vela-card.jpeg);
+}
+#contenedor-cards .card .card__content {
+  height: auto;
+  max-height: none;
+  background-color: #efeeed;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 10px;
+}
+#contenedor-cards .card .card__content .card__titulo {
+  margin-top: 0;
+  color: #3b380f;
+  text-align: center;
+  padding: 3px;
+}
+#contenedor-cards .card .card__content .card__arti {
+  color: #b0a7a7;
+  padding: auto;
+  text-align: justify;
+}
+#contenedor-cards .card .card__content button {
+  align-items: center;
+}
+#contenedor-cards .card .card__content .btn-primary {
+  padding: 8px;
+  background: none;
+  border: 2px solid rgba(59, 56, 15, 0.7058823529);
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(97, 95, 95, 0.5803921569);
+  border-color: rgba(59, 56, 15, 0.7058823529);
+}
+#contenedor-cards .card .card__content .btn-primary :hover {
+  padding: 8px;
+  border: 2px solid rgba(59, 56, 15, 0.7058823529);
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(59, 56, 15, 0.7058823529);
+  border-color: rgba(97, 95, 95, 0.7176470588);
+}
+#contenedor-cards .card .card__content .btn-secondary {
+  padding: 8px;
+  background: none;
+  border: 2px solid rgba(59, 56, 15, 0.7058823529);
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(97, 95, 95, 0.7176470588);
+  border-color: rgba(59, 56, 15, 0.7058823529);
+}
+#contenedor-cards .card .card__content .btn-secondary :hover {
+  padding: 8px;
+  border: 2px solid rgba(59, 56, 15, 0.7058823529);
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(59, 56, 15, 0.7058823529);
+  border-color: rgba(97, 95, 95, 0.7176470588);
+}
+
+@media (max-width: 1024px) {
+  #contenedor-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  #contenedor-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 fr);
+    margin-left: 0;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/*Estilos footer*/
+.footer {
+  background-color: rgba(44, 42, 42, 0.7176470588);
+  padding: 1rem 0;
+}
+.footer .container-footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #cbc3c3;
+}
+.footer .container-footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container-footer .footer-row .menu-footer {
+  width: 25%;
+  padding: 0 15px;
+  margin-top: 10px;
+}
+.footer .container-footer .footer-row .menu-footer h4 {
+  font-size: 20px;
+  color: #383535;
+  margin-bottom: 20%;
+  margin-left: 30px;
+  font-weight: 500;
+  border-bottom: 2px solid #0b0b0b;
+  display: inline-block;
+}
+.footer .container-footer .footer-row .menu-footer ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #323030;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+.footer .container-footer .footer-row .menu-footer .redes {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.footer .container-footer .footer-row .menu-footer .redes .iconos-redes {
+  color: #413f3f;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.footer .container-footer .footer-row .menu-footer .redes .iconos-redes :hover {
+  color: #0b0b0b;
+}
+
+@media (max-width: 1024px) {
+  .menu-footer {
+    width: 50%;
+  }
+  .menu-footer h4 {
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  .menu-footer ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-footer {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .footer-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .menu-footer h4 {
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+  .menu-footer ul li a {
+    font-size: 14px;
+  }
+  .redes {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer-row {
+    grid-template-columns: 1fr;
+  }
+}
+/*Estilos Catalogo*/
+.contenedor-catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 3rem 0.5rem;
+  gap: 20px;
+  max-width: 100%;
+  padding: 10px 0 60px 0;
+  border-radius: 6px;
+  background-color: rgba(188, 179, 179, 0.3137254902);
+  margin-bottom: 4rem;
+}
+.contenedor-catalogo :hover {
+  box-shadow: 0 10px 280px rgb(0, 0, 12);
+}
+.contenedor-catalogo .conteiner-items {
+  display: grid;
+  border-radius: 10px;
+  width: 275px;
+  margin: 2rem auto;
+  background-color: rgba(200, 192, 192, 0.8274509804);
+}
+.contenedor-catalogo .conteiner-items .item img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-top: 5px;
+  transition: all 0.5s;
+}
+.contenedor-catalogo .conteiner-items .item img :hover {
+  transform: scale(1.1);
+}
+.contenedor-catalogo .conteiner-items .infor {
+  padding: 15px 20px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-catalogo .conteiner-items .infor .precio {
+  font-size: 18px;
+  font-weight: 900;
+}
+.contenedor-catalogo .conteiner-items .infor button {
+  width: 80%;
+  border: none;
+  background: none;
+  background-color: rgba(177, 150, 115, 0.659);
+  color: #3b380f;
+  padding: 3px;
+  transition: all 0.5s;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-catalogo {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem auto;
+    padding: 10px 0 40px 0;
+  }
+  .conteiner-items {
+    width: 300px;
+    margin: 2rem auto;
+  }
+  .item img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-catalogo {
+    grid-template-columns: 1fr;
+    margin-left: 0 auto;
+    padding: 10px 0 20px 0;
+  }
+  .conteiner-items {
+    width: 280px;
+    margin: 2rem auto;
+  }
+  .item img {
+    width: 100%;
+    height: 180px;
+  }
+}
+.infor button:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos Nosotros*/
+.nosotros {
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(214, 205, 192, 0.314);
+}
+.nosotros .descripcion-empresa article {
+  color: #232121;
+  margin-bottom: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+.articulos {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*items-nosotros*/
+.asesoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.asesoria .nosotros-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.asesoria .inf-form {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 40%;
+  max-width: 450px;
+  background-color: rgba(225, 207, 181, 0.314);
+  padding: 30px;
+  border-radius: 1.5rem;
+}
+.asesoria .inf-form h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-shadow: #232121;
+  font-weight: 300;
+}
+.asesoria .inf-form input {
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  width: 15rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.asesoria .inf-form button {
+  width: 5rem;
+  font-size: 1rem;
+  padding: 3px;
+  background-color: rgba(97, 95, 95, 0.537254902);
+  border-radius: 2rem;
+  margin-top: 10px;
+}
+
+/*estilos formulario*/
+.contenedor-form {
+  background: #e8e4e4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-envios {
+  max-width: 500px;
+  margin: 10px auto;
+}
+.form-envios h4 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+.form-envios .control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.form-envios .control :focus {
+  border-color: rgba(223, 151, 58, 0.659);
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+.form-envios .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-envios .data a {
+  color: rgba(188, 140, 77, 0.783);
+  margin-left: 7px;
+}
+.form-envios .data a :hover {
+  text-decoration: underline;
+  color: rgba(40, 39, 37, 0.959);
+}
+.form-envios .pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+.form-envios .iconos-pago {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.form-envios .iconos-pago a {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+.form-envios .iconos-pago a :hover {
+  color: rgba(177, 150, 115, 0.659);
+}
+.form-envios .botton {
+  width: 50%;
+  padding: 12px;
+  background-color: rgb(192, 151, 110);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: auto 25%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.form-envios .botton :hover {
+  background-color: rgba(215, 172, 116, 0.911);
+}
+
+@media (max-width: 1024px) {
+  .contenedor-form {
+    margin-left: auto 20px;
+    padding: 20px;
+  }
+  .botton {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-form {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 19px;
+    width: 100%;
+  }
+  .form-envios {
+    max-width: 350px;
+  }
+  .form-envios h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .form-envios .control {
+    font-size: 12px;
+  }
+  .form-envios .data, .form-envios .pago {
+    font-size: 12px;
+  }
+  .form-envios .botton {
+    width: 50%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
