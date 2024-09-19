@@ -71,8 +71,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
-  margin: 20px;
+  margin: 0.5rem auto;
+  margin-top: 25px;
   /*estilos buscador*/
 }
 .navbar .fa-bars {
@@ -90,6 +90,8 @@
   border-radius: 2rem;
   background-color: azure;
   height: 2rem;
+  padding-left: 0.5rem;
+  margin-right: 1rem;
   overflow: hidden;
 }
 .navbar .search input {
@@ -97,7 +99,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: none;
   font-size: 1rem;
-  padding: 0 1rem;
   width: 15rem;
   color: black;
   cursor: pointer;
@@ -116,6 +117,56 @@
   color: rgba(240, 248, 255, 0.888);
 }
 
+@media (max-width: 700px) {
+  .barra {
+    height: 250px;
+  }
+  .navbar {
+    margin-top: 10px;
+  }
+  .menu {
+    gap: 0.2rem;
+  }
+  .search {
+    width: 15rem;
+    height: 1.8rem;
+  }
+  .search input {
+    font-size: 0.9rem;
+  }
+  .btn-search {
+    padding: 0.8rem;
+  }
+  .btn-search i {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .barra {
+    height: 120px;
+  }
+  .navbar {
+    padding: 0.2rem;
+  }
+  .menu {
+    gap: 0.3rem;
+  }
+  .search {
+    width: 17rem;
+    height: 1.6rem;
+    margin-left: 50px;
+  }
+  .search input {
+    width: 3rem;
+    font-size: 0.6rem;
+  }
+  .btn-search {
+    padding: 0.2rem;
+  }
+  .btn-search i {
+    font-size: 1rem;
+  }
+}
 /*estilos portada*/
 .banner {
   background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5254901961), rgba(0, 0, 32, 0.168627451)), url(../img/living-room-8578263_1280.jpg);
@@ -479,9 +530,11 @@
 .footer {
   background-color: rgba(44, 42, 42, 0.7176470588);
   padding: 1rem 0;
+  height: auto;
 }
 .footer .container-footer {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   background-color: #cbc3c3;
 }
@@ -490,7 +543,7 @@
   flex-wrap: wrap;
 }
 .footer .container-footer .footer-row .menu-footer {
-  width: 25%;
+  width: 27%;
   padding: 0 15px;
   margin-top: 10px;
 }
@@ -526,8 +579,12 @@
 }
 
 @media (max-width: 1024px) {
+  .footer {
+    height: 100%;
+  }
   .menu-footer {
     width: 50%;
+    height: auto;
   }
   .menu-footer h4 {
     margin-left: 15px;
@@ -541,6 +598,7 @@
   .menu-footer {
     width: 100%;
     padding: 0 10px;
+    justify-content: center;
   }
   .footer-row {
     grid-template-columns: repeat(2, 1fr);
@@ -560,7 +618,21 @@
 }
 @media (max-width: 480px) {
   .footer-row {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-footer {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .menu-footer h4 {
+    margin-left: 0;
+  }
+  .redes {
+    justify-content: center;
   }
 }
 /*Estilos Catalogo*/
