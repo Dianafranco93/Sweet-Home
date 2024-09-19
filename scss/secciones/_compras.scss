@@ -1,0 +1,84 @@
+  /*estilos formulario*/
+  
+  .contenedor-form {
+    background:$primario;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-envios{
+    max-width: 500px;
+    margin: 10px auto;
+    h4 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+    .control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid $secundario;
+      border-radius: 5px;
+      font-size: 14px;
+      :focus {
+      border-color: rgba(223, 151, 58, 0.659);
+      outline: none;
+      box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+     }
+    }
+    .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     a{
+      color:  rgba(188, 140, 77, 0.783);
+      margin-left: 7px;
+     :hover {
+      text-decoration: underline;
+      color:  rgba(40, 39, 37, 0.959);;
+      }
+    }
+  }
+  .pago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  
+    }
+    .iconos-pago {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;  
+       a {
+      font-size: 24px;
+      color: #555;
+      transition: color 0.3s ease;
+      :hover {
+        color: rgba(177, 150, 115, 0.659);
+      }
+     }
+    }
+  .botton {
+    width: 50%;
+  padding: 12px;
+  background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+  border: none;
+  border-radius: 5px;
+  color: $primario;
+  margin: auto 25%;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.3s ease;
+    :hover {
+      background: linear-gradient(45deg, rgba(215, 172, 116, 1), rgba(192, 151, 110, 0.911));
+    }
+   }
+  }

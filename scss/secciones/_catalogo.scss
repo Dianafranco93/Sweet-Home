@@ -1,0 +1,64 @@
+ /*Estilos Catalogo*/
+
+ .contenedor-catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin:3rem 0.5rem;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px 0 60px 0;
+    border-radius: 6px;
+    background-color:  #bcb3b350;
+    margin-bottom: 4rem;
+    :hover {
+      box-shadow: 0 10px 280px rgb(0, 0, 12);
+      }
+   
+    .conteiner-items {
+      display: grid;
+      border-radius: 10px;
+      width: 275px;
+      margin: 2rem auto;
+      background-color: #c8c0c0d3;
+     
+      .item img {
+        width: 280px;
+        height:180px;
+        object-fit: cover;
+        border-top: 5px;
+        transition: all 0.5s;
+        :hover {
+          transform: scale(1.1);
+        }
+      }
+
+  .infor {
+    padding: 15px 20px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+      
+  .precio {
+    font-size: 18px;
+    font-weight: 900;
+  }
+    
+  button {
+    width: 80%;
+    border: none;
+    background: none;
+    background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+    color: #3b380f;
+    padding: 3px;
+    transition: all 0.5s;
+    border-radius: 1rem;
+    :hover{
+    background: linear-gradient(45deg, rgb(216, 176, 122), rgba(192, 151, 110, 0.911));
+       }
+      }
+     }
+    } 
+  }

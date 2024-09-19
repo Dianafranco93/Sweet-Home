@@ -1,0 +1,147 @@
+/* queries servicios*/
+@media (max-width: 768px) {
+    .container-servicio {
+        grid-template-columns: repeat(2, 1fr); 
+        margin: auto 1rem;
+
+    .card-servicio i {
+      font-size: 1.3rem; 
+     }
+    .servicio-content span {
+      font-size: 1.1rem; 
+   }
+  .servicio-content p {
+      font-size: 0.9rem; 
+     }
+   }
+ }
+
+@media (max-width: 480px) {
+    .container-servicio {
+        grid-template-columns: 1fr;
+        margin: auto 0.5rem;
+        .card-servicio {
+          flex-direction: column; 
+          padding: 0.8rem 0; 
+          i {
+            font-size: 1.2rem;
+             
+       .servicio-content p {
+       font-size: 0.8rem; 
+          }
+        }
+  
+      }
+    }
+}
+/* queries servicios*/
+@media (max-width: 1024px) {
+    #contenedor-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1rem;
+    }
+  
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #contenedor-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 fr);
+        margin-left: 0;
+    }
+  
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+  }
+  /* queries catalogo*/
+  @media (max-width: 1024px) {
+    .contenedor-catalogo {
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 1rem auto;
+      padding: 10px 0 40px 0;
+    }
+  
+    .conteiner-items {
+      width: 300px;
+      margin: 2rem auto;
+    }
+  
+    .item img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contenedor-catalogo {
+      grid-template-columns: 1fr;
+      margin-left: 0 auto;
+      padding: 10px 0 20px 0;
+    }
+    .conteiner-items {
+      width: 280px;
+      margin: 2rem auto;
+    }
+  
+    .item img {
+      width: 100%;
+      height: 180px;
+    }
+  }
+   /*queries formulario*/
+   @media (max-width: 1024px) {
+    .contenedor-form {
+      margin-left:  auto 20px;
+      padding: 20px; 
+    }
+    .botton {
+      width: 100%;
+      margin: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .contenedor-form {
+      margin: auto;
+      margin-top: 1rem; 
+      margin-bottom: 1rem; 
+      padding: 19px; 
+      width: 100%;
+    }
+  
+    .form-envios{
+    max-width: 350px;
+    
+    h4 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .control {
+      font-size: 12px;
+    }
+  
+    .data, .pago {
+      font-size: 12px;
+    }
+  
+    .botton {
+      width: 50%;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      margin: auto;
+    }
+  
+   }
+  }
+
+
+  
+
+  
