@@ -1,12 +1,12 @@
  @import "./utilidades/_generales";
+ @import "./utilidades/_variables";
 
 
   /*estilos main contenido*/
    .main-contenedor{
      background-color:  #eae3e368;
-     margin: 30px auto;
-   
-
+     
+  
   /* Estilos caracteristicas*/
    .container-servicio{
     display: grid;
@@ -14,7 +14,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
     padding: 1rem 0;
-   margin-right: 3rem;
+    margin:1rem;
    
     
     .card-servicio{
@@ -22,10 +22,11 @@
       align-items: center;
       justify-content: center;
       gap:0.5rem ;
+      width: 85%;
    
       background-color:$primario;
       border-radius: 1rem;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
 
       i{
         font-size:1.5rem ;
@@ -36,6 +37,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      align-content: center;
       span{
         font-weight: 700;
         font-family: 1.2rem;
@@ -51,44 +53,54 @@
 
      }
    }
+   @media (max-width: 768px) {
+    .container-servicio {
+        grid-template-columns: repeat(2, 1fr); 
+        margin: auto 1rem;
 
-  
-   @media (max-width: 1024px) {
-    #contenedor-cards {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 1rem;
-    }
-  
-    .card {
-        width: 100%;
-        margin-left: 0;
-    }
-  }
-  
-  
-  @media (max-width: 768px) {
-    #contenedor-cards {
+    .card-servicio i {
+      font-size: 1.3rem; 
+     }
+    .servicio-content span {
+      font-size: 1.1rem; 
+   }
+  .servicio-content p {
+      font-size: 0.9rem; 
+     }
+   }
+ }
+
+@media (max-width: 480px) {
+    .container-servicio {
         grid-template-columns: 1fr;
-        margin-left: 0;
-    }
+        margin: auto 0.5rem;
+        .card-servicio {
+          flex-direction: column; 
+          padding: 0.8rem 0; 
+          i {
+            font-size: 1.2rem;
+             
+       .servicio-content p {
+       font-size: 0.8rem; 
+          }
+        }
   
-    .card {
-        width: 100%;
-        margin-left: 0;
+      }
     }
-  }
+}
+
   
     /* Estilos mas vendidos inicio*/
   .mas-vendidos{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 2.5rem;
+    margin: auto 0.5rem;
 
  .container-categories{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 3rem;
+  gap: 2rem;
   .card-category{
     height: 20rem;
     display: flex;
@@ -96,7 +108,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
-    gap: 2rem;
+    gap: 1rem;
+   
     p{
       font-size: 1.5rem;
       text-transform: capitalize;
@@ -152,11 +165,11 @@
   cursor: pointer;
   :hover{
     background-color:  #b0a7a7;
-    color:#615f5fb7;
+    color:$secundario;
  }
 .active{
 background-color:  #ccc3c3;
-color: #615f5fb7;
+color: $secundario;
 }
 }
   }
@@ -188,7 +201,8 @@ color: #615f5fb7;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
-    margin: 2rem auto ;
+    margin: 0;
+    background-image: linear-gradient(to right, #f9f9f9, #bcb6b6c8);
     .card {
       display: flex;
       justify-content: center;
@@ -198,6 +212,7 @@ color: #615f5fb7;
       border: 6px solid #615f5fb7;
       border-radius: 1rem;
       box-shadow: 0 4px 8px #3b380f 0, 0, 0, 0.1;
+      background-image: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
       display: inline-block;
       margin: 1rem auto;
 
@@ -214,7 +229,7 @@ color: #615f5fb7;
         height: 170px;
         width: 100%;
         object-fit: cover;
-        background-color: #615f5fb7;
+        background-color: $secundario;
         border-radius: 0.5rem;
         background-image: url(../img.html/soja.jpeg);
       }
@@ -269,7 +284,7 @@ color: #615f5fb7;
     border-radius: 10px;
     color: $primario;
     background-color: rgba(59, 56, 15, 0.7058823529);
-    border-color: #615f5fb7;
+    border-color:$secundario;
   }
   }
  
@@ -279,7 +294,7 @@ color: #615f5fb7;
     border: 2px solid rgba(59, 56, 15, 0.7058823529);
     border-radius: 10px;
     color: $primario;
-    background-color:#615f5fb7;
+    background-color:$secundario;
     border-color: rgba(59, 56, 15, 0.7058823529);
       
   :hover {
@@ -372,11 +387,14 @@ color: #615f5fb7;
     width: 80%;
     border: none;
     background: none;
-    background-color: rgba(177, 150, 115, 0.659);
+    background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
     color: #3b380f;
     padding: 3px;
     transition: all 0.5s;
     border-radius: 1rem;
+    :hover{
+    background: linear-gradient(45deg, rgb(216, 176, 122), rgba(192, 151, 110, 0.911));
+       }
       }
      }
     } 
@@ -432,9 +450,6 @@ color: #615f5fb7;
     }
   }
   
-
-  
-  
   .articulos{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
@@ -454,43 +469,53 @@ color: #615f5fb7;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-  }
-  .inf-form{
+    margin:1rem auto;
+    width: 100%;
+    h5{
+      margin-right: 10px;
+    }
+  }.inf-form {
     margin-top: 4rem;
     margin-bottom: 4rem; 
-    margin-left:40%;
     max-width: 450px;
-    background-color: rgba(225, 207, 181, 0.314) ;
+    background: linear-gradient(to right, rgba(225, 207, 181, 0.8), rgba(255, 255, 255, 0.5));
     padding: 30px;
     border-radius: 1.5rem;
-    h4{ 
+  
+    h4 { 
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 20px;
-      text-shadow: #232121;
+      text-shadow: 1px 1px 2px #232121; // Agregado un efecto de sombra más pronunciado
       font-weight: 300;
     }
-    input{ 
+  
+    input { 
       outline: none;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      border: none;
+      border: 1px solid rgba(0, 0, 0, 0.2); // Añadido un borde sutil
       font-size: 1.1rem;
       padding: 0 1.5rem;
-      width: 15rem;
+      width: calc(100% - 1rem); 
       color: black;
       cursor: pointer;
       border-radius: 1rem;
-      }
-
-   button{
-    width: 5rem;
-    font-size: 1rem;
-    padding: 3px;
-    background-color:#615f5f89; 
-    border-radius: 2rem;
-    margin-top: 10px;
-  }
     }
+  
+    button {
+      width: 5rem;
+      font-size: 1rem;
+      padding: 3px;
+      background-color: #615f5f89; 
+      border-radius: 2rem;
+      margin-top: 10px;
+      transition: background-color 0.3s ease; 
+    }
+  
+    button:hover {
+      background-color: rgba(97, 95, 95, 0.7); 
+    }
+  }
+  
   }
     /*estilos formulario*/
   
@@ -516,7 +541,7 @@ color: #615f5fb7;
       width: 100%;
       padding: 10px;
       margin-bottom: 15px;
-      border: 1px solid $primario;
+      border: 1px solid $secundario;
       border-radius: 5px;
       font-size: 14px;
       :focus {
@@ -562,17 +587,17 @@ color: #615f5fb7;
     }
   .botton {
     width: 50%;
-    padding: 12px;
-    background-color:  rgb(192, 151, 110);
-    border: none;
-    border-radius: 5px;
-    color:$primario;
-    margin: auto 25%;
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  padding: 12px;
+  background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+  border: none;
+  border-radius: 5px;
+  color: $primario;
+  margin: auto 25%;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.3s ease;
     :hover {
-      background-color:  rgba(215, 172, 116, 0.911);
+      background: linear-gradient(45deg, rgba(215, 172, 116, 1), rgba(192, 151, 110, 0.911));
     }
    }
   }
@@ -619,7 +644,7 @@ color: #615f5fb7;
       align-items: center;
       margin: auto;
     }
-
+  
    }
   }
 

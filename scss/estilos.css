@@ -9,18 +9,9 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.titulo-1 {
-  font-size: 25px;
-  text-align: center;
-  margin: auto;
-  margin-top: 2rem;
-  font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /*estilos contenido barra del logo*/
 .container-inicio {
-  background-color: rgba(180, 172, 172, 0.4941176471);
+  background-color: rgba(253, 249, 249, 0.7843137255);
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -73,7 +64,7 @@
 /* estilos navbar*/
 .barra {
   background-color: rgba(255, 255, 255, 0.9333333333);
-  height: 120px;
+  height: 115px;
 }
 
 .navbar {
@@ -128,7 +119,7 @@
 
 @media (max-width: 700px) {
   .barra {
-    height: 130px;
+    height: 250px;
   }
   .navbar {
     margin-top: 10px;
@@ -173,7 +164,7 @@
     padding: 0.2rem;
   }
   .btn-search i {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 /*estilos portada*/
@@ -182,11 +173,12 @@
   height: 25rem;
   background-size: cover;
   background-position: center;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner .contenedor-banner {
   max-width: 15rem;
-  padding: 1rem 0;
+  padding: 3rem 0;
   margin: 0 auto;
   margin-top: 3rem;
 }
@@ -246,58 +238,6 @@
     text-transform: uppercase;
   }
 }
-@media (max-width: 750px) {
-  .banner {
-    width: 100%;
-    height: 250px;
-  }
-  .banner .contenedor-banner {
-    width: 100%;
-    max-height: 200px;
-  }
-  .banner .contenedor-banner p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-weight: 450;
-  }
-  .banner .contenedor-banner h2 {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 2;
-  }
-  .banner .contenedor-banner a {
-    margin-top: 1px;
-    padding: auto;
-    border-radius: 12px;
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 450px) {
-  .banner {
-    width: 100%;
-    height: 250px;
-  }
-  .banner .contenedor-banner {
-    width: 100%;
-    max-height: 200px;
-  }
-  .banner .contenedor-banner p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-weight: 450;
-  }
-  .banner .contenedor-banner h2 {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 2;
-  }
-  .banner .contenedor-banner a {
-    margin-top: 1px;
-    padding: auto;
-    border-radius: 12px;
-    text-transform: uppercase;
-  }
-}
 /*Estilos footer*/
 .footer {
   background-color: rgba(44, 42, 42, 0.7176470588);
@@ -312,6 +252,7 @@
 }
 .footer .container-footer .footer-row {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer .container-footer .footer-row .menu-footer {
   width: 27%;
@@ -409,6 +350,7 @@
 /*estilos main contenido*/
 .main-contenedor {
   background-color: rgba(234, 227, 227, 0.4078431373);
+  margin: 30px auto;
   /* Estilos caracteristicas*/
 }
 .main-contenedor .container-servicio {
@@ -417,17 +359,16 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem 0;
-  margin: 1rem;
+  margin-right: 3rem;
 }
 .main-contenedor .container-servicio .card-servicio {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  width: 85%;
   background-color: rgba(255, 255, 255, 0.9333333333);
   border-radius: 1rem;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 .main-contenedor .container-servicio .card-servicio i {
   font-size: 1.5rem;
@@ -437,7 +378,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-content: center;
 }
 .main-contenedor .container-servicio .card-servicio .servicio-content span {
   font-weight: 700;
@@ -449,35 +389,24 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .container-servicio {
+@media (max-width: 1024px) {
+  #contenedor-cards {
     grid-template-columns: repeat(2, 1fr);
-    margin: auto 1rem;
+    margin-left: 1rem;
   }
-  .container-servicio .card-servicio i {
-    font-size: 1.3rem;
-  }
-  .container-servicio .servicio-content span {
-    font-size: 1.1rem;
-  }
-  .container-servicio .servicio-content p {
-    font-size: 0.9rem;
+  .card {
+    width: 100%;
+    margin-left: 0;
   }
 }
-@media (max-width: 480px) {
-  .container-servicio {
+@media (max-width: 768px) {
+  #contenedor-cards {
     grid-template-columns: 1fr;
-    margin: auto 0.5rem;
+    margin-left: 0;
   }
-  .container-servicio .card-servicio {
-    flex-direction: column;
-    padding: 0.8rem 0;
-  }
-  .container-servicio .card-servicio i {
-    font-size: 1.2rem;
-  }
-  .container-servicio .card-servicio i .servicio-content p {
-    font-size: 0.8rem;
+  .card {
+    width: 100%;
+    margin-left: 0;
   }
 }
 /* Estilos mas vendidos inicio*/
@@ -485,12 +414,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: auto 0.5rem;
+  margin-bottom: 2.5rem;
 }
 .mas-vendidos .container-categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 }
 .mas-vendidos .container-categories .card-category {
   height: 20rem;
@@ -499,7 +428,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 .mas-vendidos .container-categories .card-category p {
   font-size: 1.5rem;
@@ -576,7 +505,8 @@
 .gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery .gallery-img-3 {
   grid-column: 2/4;
@@ -588,8 +518,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin: 0;
-  background-image: linear-gradient(to right, #f9f9f9, rgba(188, 182, 182, 0.7843137255));
+  margin: 2rem auto;
 }
 #contenedor-cards .card {
   display: flex;
@@ -600,14 +529,14 @@
   border: 6px solid rgba(97, 95, 95, 0.7176470588);
   border-radius: 1rem;
   box-shadow: 0 4px 8px #3b380f 0, 0, 0, 0.1;
-  background-image: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
   display: inline-block;
   margin: 1rem auto;
 }
 #contenedor-cards .card .card__img1 {
   height: 170px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: rgba(97, 95, 95, 0.431372549);
   border-radius: 0.5rem;
   background-image: url(../img.html/molde-bb.jpeg);
@@ -615,7 +544,8 @@
 #contenedor-cards .card .card__img2 {
   height: 170px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: rgba(97, 95, 95, 0.7176470588);
   border-radius: 0.5rem;
   background-image: url(../img.html/soja.jpeg);
@@ -623,7 +553,8 @@
 #contenedor-cards .card .card__img3 {
   height: 170px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: rgba(97, 95, 95, 0.7176470588);
   border-radius: 0.5rem;
   background-image: url(../img.html/vela-card.jpeg);
@@ -734,7 +665,8 @@
 .contenedor-catalogo .conteiner-items .item img {
   width: 280px;
   height: 180px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top: 5px;
   transition: all 0.5s;
 }
@@ -758,14 +690,11 @@
   width: 80%;
   border: none;
   background: none;
-  background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+  background-color: rgba(177, 150, 115, 0.659);
   color: #3b380f;
   padding: 3px;
   transition: all 0.5s;
   border-radius: 1rem;
-}
-.contenedor-catalogo .conteiner-items .infor button :hover {
-  background: linear-gradient(45deg, rgb(216, 176, 122), rgba(192, 151, 110, 0.911));
 }
 
 @media (max-width: 1024px) {
@@ -833,33 +762,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
-  width: 100%;
-}
-.asesoria .nosotros-media h5 {
-  margin-right: 10px;
+  margin-top: 50px;
 }
 .asesoria .inf-form {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-left: 40%;
   max-width: 450px;
-  background: linear-gradient(to right, rgba(225, 207, 181, 0.8), rgba(255, 255, 255, 0.5));
+  background-color: rgba(225, 207, 181, 0.314);
   padding: 30px;
   border-radius: 1.5rem;
 }
 .asesoria .inf-form h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  text-shadow: 1px 1px 2px #232121;
+  text-shadow: #232121;
   font-weight: 300;
 }
 .asesoria .inf-form input {
   outline: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: none;
   font-size: 1.1rem;
   padding: 0 1.5rem;
-  width: calc(100% - 1rem);
+  width: 15rem;
   color: black;
   cursor: pointer;
   border-radius: 1rem;
@@ -871,10 +797,6 @@
   background-color: rgba(97, 95, 95, 0.537254902);
   border-radius: 2rem;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-.asesoria .inf-form button:hover {
-  background-color: rgba(97, 95, 95, 0.7);
 }
 
 /*estilos formulario*/
@@ -902,7 +824,7 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid rgba(97, 95, 95, 0.7176470588);
+  border: 1px solid rgba(255, 255, 255, 0.9333333333);
   border-radius: 5px;
   font-size: 14px;
 }
@@ -948,17 +870,17 @@
 .form-envios .botton {
   width: 50%;
   padding: 12px;
-  background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+  background-color: rgb(192, 151, 110);
   border: none;
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.9333333333);
   margin: auto 25%;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .form-envios .botton :hover {
-  background: linear-gradient(45deg, rgb(215, 172, 116), rgba(192, 151, 110, 0.911));
+  background-color: rgba(215, 172, 116, 0.911);
 }
 
 @media (max-width: 1024px) {
@@ -999,6 +921,4 @@
     align-items: center;
     margin: auto;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
