@@ -1,12 +1,10 @@
- @import "./utilidades/_generales";
- @import "./utilidades/_variables";
- @import "./utilidades/_mediaqueries";
- @import "./secciones/_catalogo";
- @import "./secciones/_inicio";
- @import "./secciones/_nosotros";
- @import "./secciones/_compras";
+@import 'secciones/_catalogo';
+@import 'secciones/_combos';
+@import 'secciones/_inicio';
+@import 'secciones/_compras';
+@import 'secciones/_nosotros';
+@import 'utilidades/_generales';
+@import 'utilidades/_mediaqueries';
+@import 'utilidades/_variables';
 
 
-
-
-  

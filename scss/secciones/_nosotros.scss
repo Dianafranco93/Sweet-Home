@@ -1,84 +1,143 @@
+  @import "../utilidades/_variables";
+  @import "../utilidades/_mediaqueries";
 
   /* Estilos Nosotros*/
   .nosotros{
     width: 100%;
     padding: 2rem;
     background-color: rgba(214, 205, 192, 0.314);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
    .descripcion-empresa article{
     color: #232121 ;
-    margin-bottom: 5rem;
+    margin:1rem auto ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
   }
+
+}
+/* Estilo general del main */
+.seccion-myv {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  max-width: 100%; 
+  margin: auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
-.articulos{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+.img-m {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  grid-column: 1 / 2; 
+  border-radius: 5px; 
 }
 
-/*items-nosotros*/
+.articulo-1 {
+  grid-column: 1 / 2; 
+  padding: 15px; 
+  background-color: #fff;
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.articulo-2 {
+  grid-column: 2 / 3; 
+  padding: 15px; 
+  background-color: #fff; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
 
-.asesoria{
+
+.img-v {
+  width: 100%; 
+  height: 300px;
+  object-fit: cover; 
+  grid-column: 2 / 3;
+  border-radius: 5px; 
+}
+
+
+.asesoria {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  max-width: 100%; 
+  margin: auto; 
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-media {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  justify-content: center; 
   align-items: center;
-  justify-content: space-between;
+}
 
-.nosotros-media{
+.nosotros-media h5 {
+  margin-bottom: 15px; 
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+.nosotros-media iframe {
+  width: 100%;
+  height: 300px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.inf-form {
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
-  margin:1rem auto;
-  width: 100%;
-  h5{
-    margin-right: 10px;
-  }
-}.inf-form {
-  margin-top: 4rem;
-  margin-bottom: 4rem; 
-  max-width: 450px;
-  background: linear-gradient(to right, rgba(225, 207, 181, 0.8), rgba(255, 255, 255, 0.5));
-  padding: 30px;
-  border-radius: 1.5rem;
-  .infor button:hover {
-    transform: scale(1.1);
-  }
-
-  h4 { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px #232121; 
-    font-weight: 300;
-  }
-
-  input { 
-    outline: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid rgba(0, 0, 0, 0.2); 
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
-    width: calc(100% - 1rem); 
-    color: black;
-    cursor: pointer;
-    border-radius: 1rem;
-  }
-
-  button {
-    width: 5rem;
-    font-size: 1rem;
-    padding: 3px;
-    background-color: #615f5f89; 
-    border-radius: 2rem;
-    margin-top: 10px;
-    transition: background-color 0.3s ease; 
-  }
-
-  button:hover {
-    background-color: rgba(97, 95, 95, 0.7); 
-  }
+  padding: 20px; 
+  background: linear-gradient(to bottom right, rgba(236, 221, 200, 0.659), #8dadcae6);
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.inf-form h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
 }
+
+.inf-form input {
+  width: 75%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #cccccc96; 
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.inf-form button {
+  width: 40%;
+  padding: 10px;
+  background: linear-gradient(45deg, rgb(178, 160, 141), rgba(241, 200, 148, 0.911));
+  color: #edecdf;
+  margin-top: 10px;
+  transition: all 0.5s;
+  border-radius: 1rem;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #050505; }
+  }
+  
+
+

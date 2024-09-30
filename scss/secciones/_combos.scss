@@ -1,8 +1,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_mediaqueries";
 
-  /*Estilos Catalogo*/
- .contenedor-catalogo {
+.contenedor-catalogo-combos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin:3rem 0.5rem;
@@ -16,7 +15,7 @@
       box-shadow: 0 10px 280px rgb(0, 0, 12);
       }
    
-    .conteiner-items {
+    .conteiner-items-combos {
       display: grid;
       border-radius: 10px;
       width: 275px;
@@ -47,6 +46,10 @@
     font-size: 18px;
     font-weight: 900;
   }
+  .antes{
+    font-size: 18px;
+    font-weight: 900;
+  }
     
   button {
     width: 80%;
@@ -64,3 +67,7 @@
      }
     } 
   }
+
+
+
+

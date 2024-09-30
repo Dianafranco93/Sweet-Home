@@ -36,25 +36,36 @@
               </div>
              </div>  
          </div>
-         <section class="barra">
-              <nav class="navbar contenedor">
-                <ul class="menu">
-                  <li><a class="nav-link" href="index.html">Inicio</a></li>
-                  <li><a class="nav-link"  href="./pages/nosotros.html">Nosotros</a></li>  
-                  <li><a class="nav-link"   href="./pages/catalogo.html">Catalogo</a></li> 
-                  <li><a class="nav-link"  href="./pages/compras.html">Compras</a></li>
-                </ul>
-                   
-                   <form class="search">
-                        <input type="search" placeholder="Buscar...">
-                        <button class="btn-search">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                   </form>
-              </nav>
-         </section>
-     </header>
-
+      
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"> Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/catalogo.html">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Combos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/compras.html">Compras</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class=" btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
      <section class="banner">
           <div class="contenedor-banner">
             <p>Los mejores productos para decorar tu hogar</p>
@@ -230,6 +241,8 @@
         </section>
          
       </main>
+
+      
         <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
  
         <footer class="footer">  

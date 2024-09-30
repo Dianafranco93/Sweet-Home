@@ -36,23 +36,34 @@
          </div>
         </div>  
     </div>
-         <section class="barra">
-              <nav class="navbar contenedor">
-                <ul class="menu">
-                  <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                  <li><a class="nav-link"  href="../pages/nosotros.html">Nosotros</a></li>  
-                  <li><a class="nav-link"   href="../pages/catalogo.html">Catalogo</a></li> 
-                  <li><a class="nav-link"  href="../pages/compras.html">Compras</a></li>
-                </ul>
-                   
-                   <form class="search">
-                        <input type="search" placeholder="Buscar...">
-                        <button class="btn-search">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                   </form>
-              </nav>
-         </section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"> Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/combos.html">Combos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/compras.html">Compras</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
      </header>
 
      <section class="banner">
@@ -64,8 +75,8 @@
      </section>
 
 
-     <Main class="nosotros">
-     
+     <section class="nosotros">
+      
         <h2 class="titulo-1">Nosotros</h2>
         <div  class="descripcion-empresa">
         <article >Somos una  marca que se dedica a la fabricacion y ventas de elementos decorativos para el hogar,
@@ -74,22 +85,36 @@
          Te ofrecemos nuestros productos totalmente garantizados ya que nuestro proposito es darle la mejor experiencia a nuestros clientes para mantenernos en contacto.
          Enviamos todos nuestros productos a cualquier parte del pais. Pagos 100% en linea o contra entrega.</article>
         </div>
-    
+     </section>
 
-        <section class="container-myv">
-          <div class="articulos"> 
-          <h5 class="titulo-1">Nuestra Misión</h5>
-          <article>
-            Inspiramos a nuestros clientes a proyectar su estilo de vida, creando en sus hogares ambientes personalizados, donde el protagonismo se lo llevan las emociones que genera el mueble soñado, reflejando elegancia, confort e innovación.
-          </article>
-        </div>
-         <div class="articulos">
-          <h5 class="titulo-1">Nuestra Visión</h5>
-           <article>
-            Queremos ser un referente de muebles para el hogar, con altos estándares de calidad y una excelente relación precio - beneficio; así como el pleno desarrollo del capital humano, siendo un gran exponente del servicio y la atención al cliente.
-           </article>
-          </div>
-        </section>
+      
+        <main class="seccion-myv">
+          <section class="container-myv">
+            <div>
+              <img class="img-m" src="../img/mision.jpg" alt="">
+            </div>
+            <div class="articulo-1"> 
+              <h5 class="titulo-1">Nuestra Misión</h5>
+              <article>
+                Inspiramos a nuestros clientes a proyectar su estilo de vida, creando en sus hogares ambientes personalizados, donde el protagonismo se lo llevan las emociones que genera el mueble soñado, reflejando elegancia, confort e innovación.
+              </article>
+            </div>
+          </section>
+
+          <section class="vision">
+            <div class="articulo-2"> 
+              <h5 class="titulo-1">Nuestra Visión</h5>
+              <article>
+                Queremos ser un referente de muebles para el hogar, con altos estándares de calidad y una excelente relación precio - beneficio; así como el pleno desarrollo del capital humano, siendo un gran exponente del servicio y la atención al cliente.
+              </article>
+            </div>
+            <div>
+              <img class="img-v" src="../img/vision.jpg" alt="">
+            </div>
+          </section>
+        </main>
+        
+      
         
         <section class="asesoria">
         <div class="nosotros-media">
@@ -103,7 +128,7 @@
            <button>Enviar</button>
         </div>
        </section>
-     </Main>
+   
 
 
 </body>
