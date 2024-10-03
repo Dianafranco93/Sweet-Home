@@ -1,3 +1,6 @@
+@import "../utilidades/_variables";
+@import "../utilidades/_mediaqueries";
+
 /*  estilos gnerales*/
 * {
     margin: 0;
@@ -20,7 +23,7 @@
 
     .container-inicio{
       background: linear-gradient(to bottom right, rgba(15, 15, 14, 0.412), #bbc5c595);
-      max-width: 120rem;
+      max-width: 100%;
       margin: 0 auto;
       
       .inicio{
@@ -28,44 +31,49 @@
         justify-content: space-between;
         align-items: center;
         padding:1rem 0 ;
+
+        h1{
+          font-size: 25px;
+          margin-left: 5rem;
+          padding: 0;
+        }
         
         img{
-       width: 100px;
-       margin:10px;
+       width: 150px;
+       margin-left: 10px;
         }
         
       } 
     .container-logo{
      display: flex;
+     width: 20%;
      align-items: center;
-     gap: 5rem;
     } 
       .contenedor-soporte{
       display: flex;
       align-items: center;
-      gap: 1rem;
       flex-direction: column;
-      margin: 0;
+      margin: auto;
+      width: 50%;
      }  
   .container-usuario {
     display:flex;
-    gap: 1rem;
     cursor: pointer;
   .fa-user{
-   font-size: 1rem; 
+   font-size: 15px; 
    color: #141313;
-   padding-right: 0.5rem;
+   padding-right: 0.2rem;
    border-right: 1px solid;
    }
   .fa-cart-flatbed-suitcase{
-   font-size: 1rem; 
+   font-size:20px; 
    color: #141313;
    padding-right: 0.5rem;
    border-right: 1px solid;
    }
     .contenedor-carrito{
      gap: 1rem;
-     margin-right: 1rem;
+     margin: auto 1rem;
      display: flex;
      flex-direction: column;
     }
@@ -77,20 +85,22 @@
      margin: 0;
     .container-fluid{
        margin: 0;
-       .nav-link a{
-        color: #0b0b0b;
-        &:hover{
-        background: linear-gradient(45deg, rgb(203, 163, 111), rgba(192, 151, 110, 0.911));
-        }
+       .nav-link a {
+        color: #363232;
+        font-size: 20px;
+        transition: color 0.3s;     
+         &:hover {
+           color: #030303;
+         }
       }
       .d-flex{
-        width: 80%;
+        width: 70%;
         margin: auto 1rem ;
        .form-control{
         padding: 8px;
-        color: #3e3c3c;
+        color: #0b0b0b;
         width: 55%;
-        margin-left: 20%;
+        margin-left: auto;
        }
        .btn-outline-success{
         width:25%;
@@ -169,14 +179,13 @@
       display: flex;
         
   .menu-footer{
-    width: 27%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0;
     margin-top: 10px;
     h4{
       font-size: 20px;
       color: #fcfbfb;
-      margin-bottom: 20%;
-      margin-left: 30px;
+    margin: auto;
       font-weight: 500;
       border-bottom: 2px solid #dbd4d4;
       display: inline-block;
@@ -194,7 +203,6 @@
    }
    .redes {
     display: flex;
-    gap: 10px;
     padding-top: 10px;
     .iconos-redes {
       color: #ece9e9;

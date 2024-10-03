@@ -1,3 +1,87 @@
+@import "../utilidades/_variables";
+ 
+ /* dia queries inicio conteiner */
+@media (min-width: 1025px) {
+  .container-inicio {
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .contenedor-logo h1 {
+    font-size: 40px;
+  }
+  .contenedor-soporte {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor-carrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .fa-user, .fa-basket-shopping {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container-inicio {
+    padding: 10px;
+  }
+  .contenedor-logo h1 {
+    font-size: 32px;
+  }
+  .contenedor-soporte {
+    justify-content: space-between;
+  }
+  .contenedor-carrito {
+    display: flex;
+    flex-direction: row;
+  }
+  .fa-user, .fa-basket-shopping {
+    font-size: 18px;
+  }
+}
+
+/* Para pantallas pequeñas (máximo 450px) */
+@media (max-width: 450px) {
+  .container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor-logo {
+    margin-bottom: 10px;
+  }
+
+  .contenedor-soporte {
+    margin-bottom: 15px;
+  }
+
+  .container-usuario {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-carrito {
+    margin-bottom: 10px;
+  }
+
+
+  .fa-user, .fa-basket-shopping {
+    font-size: 15px;
+  }
+
+  .contenedor-logo h1 {
+    font-size: 15px; 
+  }
+}
+
+
 /* queries servicios*/
 @media (max-width: 768px) {
     .container-servicio {
@@ -19,7 +103,7 @@
 @media (max-width: 480px) {
     .container-servicio {
         grid-template-columns: 1fr;
-        margin: auto 0.5rem;
+        margin: auto ;
         .card-servicio {
           flex-direction: column; 
           padding: 0.8rem 0; 
@@ -33,6 +117,10 @@
       }
     }
 }
+
+/* queries categorias */
+
+
 /* queries cards*/
 @media (max-width: 1024px) {
     #contenedor-cards {
@@ -44,15 +132,10 @@
         margin-left: 0;
     }
   }
-  @media (max-width: 768px) {
-    #contenedor-cards {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3 fr);
-        margin-left: 0;
-    }
-    .card {
-        width: 100%;
-        margin-left: 0;
+  @media (max-width: 600px) {
+    .container-cards {
+      grid-template-columns: 1fr; 
+      gap: 15px; 
     }
   }
   /* queries catalogo*/
@@ -74,7 +157,7 @@
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     .contenedor-catalogo {
       grid-template-columns: 1fr;
       margin-left: 0 auto;
@@ -83,8 +166,17 @@
     .conteiner-items {
       width: 280px;
       margin: 2rem auto;
+
+      .infor{
+        margin: auto;
+        width: 100%;
+        h5{
+          font-size: 10px;
+          margin-left: 10px;
+        }
+      }
+     
     }
-  
     .item img {
       width: 100%;
       height: 180px;
@@ -140,7 +232,7 @@
       width: 100%;
       height: 250px;
       .contenedor-banner {
-        width: 100%;
+        width: $anchos;
         height: auto;
         p{
           font-size: 15px;
@@ -219,107 +311,263 @@
     }
   }
 
-   /*queries footer*/
-  @media (max-width: 1024px) {
-    .footer{
-      height: 100%;
-      .menu-footer {
-        width: 25%;
-        height: auto;
-
-      h4 {
-      margin-left: 15px;
-      font-size: 18px;
-       }
-      }
-    }
-    .menu-footer ul li a {
-      font-size: 16px;
-      
-    }
-  }
-  
-  @media (max-width: 768px) {
+  /*queries footer*/
+  /*queries footer*/
+@media (max-width: 1024px) {
+  .footer {
+    width: $anchos;
+    height: 100%;
+    
     .menu-footer {
-      width: 100%; 
-      padding: 0 10px;
-      justify-content: center;
-           
-    ul li a {
-      font-size: 14px;
+      width: 100%;
+      height: auto;
     }
-     
-    h4 {
-      font-size: 16px;
-      margin-left: 0;
-      margin-bottom: 10%;
-    }
-    .footer-row {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
-    }
-    .redes {
-      justify-content: center; 
+
+    .footer-title h4 {
+      margin-right:  30px;
+      font-size: 18px;
     }
   }
 
-  @media (max-width: 480px) {
-    .footer-row {
-      flex-direction: column;
-      align-items: center;
+  .lista-footer ul li a {
+    font-size: 16px;
+    width: $anchos;
+    margin: 0;
+  }
+
+  .redes {
+    justify-content: center;
+
+    .iconos-redes {
+      font-size: 20px;
+      gap: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-footer {
+    width: $anchos;
+    padding: 0;
+    text-align: center;
+  }
+
+  .lista-footer ul li a {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .footer-title h4 {
+    font-size: 16px;
+    margin:  auto 20px;
+   
+  }
+
+  .footer-row {
+    width: $anchos;
+    margin: 0;
+  }
+
+  .redes {
+    justify-content: center;
+    margin: auto;
+
+    .iconos-redes {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-row {
+   
+    margin: 0;
   }
 
   .menu-footer {
-      width: 100%;
-      padding: 0;
-      text-align: center;
-      margin-bottom: 1rem;
-      height: auto;
-      h4 {
-        margin-left: 0;
-    }
+    padding: 0;
+    margin: 0;
+    height: auto;
   }
+
+  .lista-footer ul li a {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .footer-title h4 {
+   
+    text-align: justify;
+  }
+
   .redes {
-      justify-content: center;
-  }
-  }
+    width: $anchos;
 
-  /* queries combos*/
-  @media (max-width: 1024px) {
-    .contenedor-catalogo-combos{
-      grid-template-columns: repeat(2, 1fr);
-      margin-left: 1rem auto;
-      padding: 10px 0 40px 0;
-    }
-  
-    .conteiner-items-combos {
-      width: 300px;
-      margin: 2rem auto;
-    }
-  
-    .item img {
-      width: 100%;
-      height: 200px;
+    .iconos-redes {
+      font-size: 20px;
     }
   }
-  
-  @media (max-width: 768px) {
-    .contenedor-catalogo-combos {
-      grid-template-columns: 1fr;
-      margin-left: 0 auto;
-      padding: 10px 0 20px 0;
-    }
-    .conteiner-items-combos {
-      width: 280px;
-      margin: 2rem auto;
-    }
-  
-    .item img {
-      width: 100%;
-      height: 180px;
-    }
-  }
-  
+}
 
+
+
+
+   /*queries combos*/
+  @media (max-width: 460px) {
+    .contenedor-catalogo-combos1 {
+      display: flex;
+      flex-direction: column; 
+      text-align: center; 
+      padding: 5px;
+      img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom:auto; 
+      }
+    }
+      .infor {
+      width: 80%; 
+      margin: 0;
+       button {
+        width: 80%; 
+        margin: auto;
+        border-radius: 3px;
+      }
+  
+    .inf-form {
+    width: 100%; 
+    padding: 10px;
+      input {
+      width: 80%; 
+      margin: auto;
+       }
+       button {
+        width: 80%; 
+        margin: auto;
+      }
+     }
+    }
+    .asesoria-combos {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .contenedor-catalogo-combos1 {
+      grid-template-columns: 1fr; 
+      padding: 20px;
+      button {
+        margin: 1rem auto;
+        border-radius: 3px;
+       }
+       img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom:auto; 
+      }
+      .asesoria-combos {
+        padding: 20px;
+        width: 100%;
+    
+         .inf-form {
+          width: 100%; 
+       
+        button {
+          width: 60%; 
+          margin:10px auto ;
+        }
+       input {
+        width: 90%; 
+        margin:10px auto ;
+         }
+       }
+      }
+    }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .contenedor-catalogo-combos1 {
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px;
+      button {
+       margin: 1rem auto;
+       border-radius: 3px;
+      }
+      img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom:auto; 
+      }
+    }
+    .asesoria-combos {
+      margin: auto 3rem;
+      padding: 30px;
+  
+     .inf-form {
+      width: 80%;
+      }
+      .infor {
+        width: 80%;
+        margin: 0;
+     input {
+      width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+      }
+    }
+  
+  
+  @media (min-width: 993px) {
+    .contenedor-catalogo-combos1 {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      button {
+        margin: 1rem auto;
+       }
+       img {
+        width: 100%; 
+        height: auto; 
+        margin-bottom:auto; 
+      }
+      .asesoria-combos {
+        padding: 40px;
+        .infor {
+          width: 400px;
+        }
+      .inf-form {
+        width: 100%; 
+        input {
+        width: 100%;
+       }
+       button {
+        width: 100%;
+      }
+      }
+        }
+      }
+    }
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
