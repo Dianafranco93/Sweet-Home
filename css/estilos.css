@@ -148,11 +148,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;
@@ -699,11 +705,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;
@@ -947,6 +959,7 @@
     width: 100%;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 700px) {
   .contenedor-catalogo-combos1 {
     grid-template-columns: 1fr;
@@ -1041,6 +1054,11 @@
 .contenedor-catalogo-combos1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+=======
+.contenedor-catalogo-combos1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: una para la info y otra para la imagen */
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   align-items: center;
   gap: 10px;
   padding: 20px;
@@ -1072,11 +1090,19 @@
 .contenedor-catalogo-combos1 .infor .precio {
   font-size: 1.5em;
   color: #E74C3C;
+<<<<<<< HEAD
 }
 .contenedor-catalogo-combos1 .infor .antes {
   text-decoration: line-through;
   color: #999;
 }
+=======
+}
+.contenedor-catalogo-combos1 .infor .antes {
+  text-decoration: line-through;
+  color: #999;
+}
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 .contenedor-catalogo-combos1 .infor button {
   width: 80%;
   padding: 10px 20px;
@@ -1137,6 +1163,102 @@
   background-color: #050505;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 460px) {
+  .contenedor-catalogo-combos1 {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex para que los elementos estén en una columna */
+    text-align: center; /* Centra el contenido */
+    padding: 5px;
+  }
+  .contenedor-catalogo-combos1 img {
+    max-width: 100%; /* La imagen ocupará el ancho completo */
+    height: auto; /* Mantén las proporciones de la imagen */
+    margin-bottom: 10px; /* Agrega un margen inferior para separar la imagen del texto */
+  }
+  .infor {
+    width: 80%; /* Ocupa todo el ancho disponible */
+    margin: 0;
+  }
+  .infor button {
+    width: 80%; /* El botón también ocupará todo el ancho */
+    margin: auto;
+  }
+  .asesoria-combos {
+    padding: 10px;
+  }
+  .asesoria-combos .inf-form {
+    width: 100%; /* El formulario ocupa todo el ancho disponible */
+    padding: 10px;
+  }
+  .asesoria-combos .inf-form input,
+  .asesoria-combos .inf-form button {
+    width: 100%; /* Los inputs y botones ocupan todo el ancho disponible */
+  }
+}
+@media (max-width: 700px) {
+  .contenedor-catalogo-combos1 {
+    grid-template-columns: 1fr; /* Cambia a una columna */
+    padding: 20px;
+  }
+  .infor {
+    width: 90%; /* Un poco más grande que en móviles */
+  }
+  .asesoria-combos {
+    padding: 20px;
+  }
+  .asesoria-combos .inf-form {
+    width: 90%; /* El formulario ocupa casi todo el ancho disponible */
+  }
+  .asesoria-combos .inf-form input,
+  .asesoria-combos .inf-form button {
+    width: 90%; /* Inputs y botones casi todo el ancho disponible */
+    margin: auto 1rem;
+  }
+}
+/* Para pantallas medianas (entre 769px y 992px de ancho) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .contenedor-catalogo-combos1 {
+    grid-template-columns: 1fr 1fr; /* Mantén las dos columnas */
+    gap: 20px;
+  }
+  .infor {
+    width: 80%;
+    margin: 0;
+  }
+  .asesoria-combos {
+    padding: 30px;
+  }
+  .asesoria-combos .inf-form {
+    width: 80%;
+  }
+  .asesoria-combos .inf-form input,
+  .asesoria-combos .inf-form button {
+    width: 80%;
+  }
+}
+/* Para pantallas grandes (más de 993px) */
+@media (min-width: 993px) {
+  .contenedor-catalogo-combos1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .infor {
+    width: 400px; /* Mantiene la estructura original */
+  }
+  .asesoria-combos {
+    padding: 40px;
+  }
+  .asesoria-combos .inf-form {
+    width: 60%; /* Un poco más pequeño que en pantallas más grandes */
+  }
+  .asesoria-combos .inf-form input,
+  .asesoria-combos .inf-form button {
+    width: 60%;
+  }
+}
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 /* dia queries inicio conteiner */
 @media (min-width: 1025px) {
   .container-inicio {
@@ -1286,11 +1408,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;
@@ -2033,11 +2161,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;
@@ -2605,11 +2739,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;
@@ -3057,6 +3197,7 @@
   border: 1px solid rgba(204, 204, 204, 0.5882352941);
   border-radius: 5px;
   font-size: 1rem;
+<<<<<<< HEAD
 }
 .asesoria .inf-form button {
   width: 40%;
@@ -3563,6 +3704,25 @@
   .contenedor-catalogo-combos1 .asesoria-combos .inf-form button {
     width: 100%;
   }
+=======
+}
+.asesoria .inf-form button {
+  width: 40%;
+  padding: 10px;
+  background: linear-gradient(45deg, rgb(178, 160, 141), rgba(241, 200, 148, 0.911));
+  color: #edecdf;
+  margin-top: 10px;
+  transition: all 0.5s;
+  border-radius: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.asesoria .inf-form button:hover {
+  background-color: #050505;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 }
 /*  estilos gnerales*/
 * {
@@ -3920,11 +4080,17 @@
   }
   .conteiner-items .infor {
     margin: auto;
+<<<<<<< HEAD
     width: 100%;
   }
   .conteiner-items .infor h5 {
     font-size: 10px;
     margin-left: 10px;
+=======
+  }
+  .conteiner-items .infor h5 {
+    font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
   .item img {
     width: 100%;

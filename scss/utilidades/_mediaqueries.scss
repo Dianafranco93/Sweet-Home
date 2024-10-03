@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../utilidades/_variables";
  
  /* dia queries inicio conteiner */
@@ -22,11 +23,37 @@
   .fa-user, .fa-basket-shopping {
     font-size: 25px;
   }
+=======
+/*queries inicio conteiner */
+@media (min-width: 1025px) {
+  .container-inicio {
+    max-width:$anchos;
+    margin: auto;
+    padding: 10px;
+    .contenedor-logo h1 {
+      font-size: 40px;
+    }
+    .contenedor-soporte {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contenedor-carrito {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fa-user, .fa-basket-shopping {
+      font-size: 25px;
+    }
+  }
+
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .container-inicio {
     padding: 10px;
+<<<<<<< HEAD
   }
   .contenedor-logo h1 {
     font-size: 32px;
@@ -41,6 +68,23 @@
   .fa-user, .fa-basket-shopping {
     font-size: 18px;
   }
+=======
+    .contenedor-logo h1 {
+      font-size: 32px;
+    }
+    .contenedor-soporte {
+      justify-content: space-between;
+    }
+    .contenedor-carrito {
+      display: flex;
+      flex-direction: row;
+    }
+    .fa-user, .fa-basket-shopping {
+      font-size: 15px;
+    }
+  }
+
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 }
 
 /* Para pantallas pequeñas (máximo 450px) */
@@ -50,7 +94,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
   }
+=======
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 
   .contenedor-logo {
     margin-bottom: 10px;
@@ -73,15 +120,25 @@
 
 
   .fa-user, .fa-basket-shopping {
+<<<<<<< HEAD
     font-size: 15px;
+=======
+    font-size: 12px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
 
   .contenedor-logo h1 {
     font-size: 15px; 
   }
+<<<<<<< HEAD
 }
 
 
+=======
+  }
+}
+
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 /* queries servicios*/
 @media (max-width: 768px) {
     .container-servicio {
@@ -92,7 +149,7 @@
       font-size: 1.3rem; 
      }
     .servicio-content span {
-      font-size: 1.1rem; 
+      font-size: 0.5rem; 
    }
   .servicio-content p {
       font-size: 0.9rem; 
@@ -120,8 +177,11 @@
 
 /* queries categorias */
 
+<<<<<<< HEAD
 
 /* queries cards*/
+=======
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 @media (max-width: 1024px) {
     #contenedor-cards {
         grid-template-columns: repeat(2, 1fr);
@@ -152,7 +212,7 @@
     }
   
     .item img {
-      width: 100%;
+      width:$anchos;
       height: 200px;
     }
   }
@@ -169,16 +229,21 @@
 
       .infor{
         margin: auto;
+<<<<<<< HEAD
         width: 100%;
         h5{
           font-size: 10px;
           margin-left: 10px;
+=======
+        h5{
+          font-size: 15px;
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
         }
       }
      
     }
     .item img {
-      width: 100%;
+      width: $anchos;
       height: 180px;
     }
   }
@@ -189,7 +254,7 @@
       padding: 20px; 
     }
     .botton {
-      width: 100%;
+      width: $anchos;
       margin: auto;
     }
   }
@@ -199,7 +264,7 @@
       margin-top: 1rem; 
       margin-bottom: 1rem; 
       padding: 19px; 
-      width: 100%;
+      width: $anchos;
     }
   
     .form-envios{
@@ -229,7 +294,7 @@
   /*queries banner*/
   @media (max-width: 1024px) {
     .banner {
-      width: 100%;
+      width: $anchos;
       height: 250px;
       .contenedor-banner {
         width: $anchos;
@@ -256,10 +321,10 @@
   }
   @media (max-width: 750px) {
     .banner {
-      width: 100%;
+      width: $anchos;
       height: 250px;
       .contenedor-banner {
-        width: 100%;
+        width: $anchos;
         max-height: 200px;
         p{
           font-size: 15px;
@@ -285,7 +350,7 @@
   
   @media (max-width: 450px) {
     .banner {
-      width: 100%;
+      width:$anchos;
       height: 250px;
       .contenedor-banner {
         width: 100%;
@@ -328,6 +393,7 @@
       font-size: 18px;
     }
   }
+<<<<<<< HEAD
 
   .lista-footer ul li a {
     font-size: 16px;
@@ -341,6 +407,28 @@
     .iconos-redes {
       font-size: 20px;
       gap: 5px;
+=======
+  
+  @media (max-width: 768px) {
+    .menu-footer {
+      width: $anchos; 
+      padding: 0 10px;
+      justify-content: center;
+           
+    ul li a {
+      font-size: 14px;
+    }
+     
+    h4 {
+      font-size: 16px;
+      margin-left: 0;
+      margin-bottom: 10%;
+    }
+    .footer-row {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
     }
   }
 }
@@ -385,9 +473,20 @@
   }
 
   .menu-footer {
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
     height: auto;
+=======
+      width:$anchos;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 1rem;
+      height: auto;
+      h4 {
+        margin-left: 0;
+    }
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   }
 
   .lista-footer ul li a {
@@ -402,6 +501,7 @@
     text-align: justify;
   }
 
+<<<<<<< HEAD
   .redes {
     width: $anchos;
 
@@ -522,6 +622,43 @@
     }
       }
     }
+=======
+  /* queries combos*/
+  @media (max-width: 1024px) {
+    .contenedor-catalogo-combos{
+      grid-template-columns: repeat(2, 1fr);
+      margin-left:$margenes;
+      padding: 10px 0 40px 0;
+      .conteiner-items-combos {
+        width: 300px;
+        margin: 2rem auto;
+        .item img {
+          width: $anchos;
+          height: 200px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contenedor-catalogo-combos {
+      grid-template-columns: 1fr;
+      margin-left: 0 auto;
+      padding: 10px 0 20px 0;
+      .conteiner-items-combos {
+        width: 280px;
+        margin: 2rem auto;
+      }
+
+    .item img {
+      width: $anchos;
+      height: 180px;
+    }
+    }
+   
+  
+  }
+>>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   
   
   @media (min-width: 993px) {
