@@ -2,112 +2,123 @@
 @import "../utilidades/_mediaqueries";
 
   /*estilos main contenido*/
-  .main-contenedor{
+   .main-contenedor{
     background-color:  #eae3e368;
-    
+    width: 100%;  
+ }  
  
- /* Estilos caracteristicas*/
-  .container-servicio{
-   display: grid;
-   width: $anchos;
-   grid-template-columns: repeat(4,1fr);
-   gap: 1rem;
-   padding: 0;
-   margin:1rem;
-  
-   .card-servicio{
-     display: flex;
-     align-items: center;
-     background: linear-gradient(to bottom right, rgba(236, 221, 200, 0.659), #8dadcae6);
-     justify-content: center;
-     gap:0.2rem ;
-     width: 80%;
-     background-color:#fff;
-     border-radius: 1rem;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     padding: 0.5rem 0;
-
-     i{
-       font-size:15px ;
-       color: #010101;
-       margin:5px;
-     }
-
-   .servicio-content{
-     display: flex;
-     flex-direction: column;
-     margin: 3px;
-     align-content: center;
-     span{
-       font-weight: 100;
-       font-size: 13px;
-       color: #010101;
-       }
-
-    p{
-     color: #030303; 
-     font-weight: 100;
-     font-size: 10px;
+   /* Estilos servicio inicio*/
+   .container-servicio {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 1rem;
+    .card-servicio {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to bottom right, rgba(236, 221, 200, 0.659), #8dadcae6);
+      justify-content: center;
+      gap: 0.2rem;
+      width: 80%;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      i {
+        font-size: 15px;
+        color: #010101;
+        margin: 5px;
+      }
     }
-     }
-   }
+    .servicio-content {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      margin: auto;
+      margin-left: 20px;
+      align-content: center;
+      span {
+        font-weight: 100;
+        font-size: 13px;
+        color: #010101;
+      }
+      p {
+        color: #030303;
+        font-weight: 100;
+        font-size: 10px;
+      }
     }
   }
-   /* Estilos mas vendidos inicio*/
- .mas-vendidos{
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   margin: auto 0.5rem;
 
-.container-categories{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 5rem;
-  margin: 1rem auto;
- .card-category{
-   height: 20rem;
-   background-color: #f0f0f0;
-   padding: 20px;
-   text-align: center;
-   border-radius: 8px;
-   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-   border-radius: 2rem;
-   gap:0.5rem;
-   p{
-     font-size: 20px;
-     margin:4rem auto;
-     text-transform: capitalize;
-     color:#ffffffee;
-     position: relative;
-   }
-    span{
-    font-size: 1rem;
-    margin: auto;
-    color:#ffffffee;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    &:hover{
-      color: #fbf8f8a4;
-   }
-   }
+/*estilos mas vendidos*/
+.mas-vendidos {
+  padding: auto; 
+  background-color: #f9f9f9; 
+  text-align: center;
+  .titulo-1 {
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom:  1.5rem; 
   }
- .category-muebles {
-   background-image:linear-gradient(#00000080, #00000080), url(../img/sala-cuero.png);
-   background-size: center;
-   background-position: bottom;
- }
- .category-alcobas {
-  background-image:linear-gradient(#00000080, #00000080), url(../img/Copia\ de\ cama-base.jpg);
-  background-size: center;
-  background-position: bottom;
- }
- .category-comedores{
-  background-image: linear-gradient(#00000080, #00000080),url(../img/comedor-clas.jpg);
-  background-size: center;
-  background-position: bottom;
- }
-}
+  .container-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5rem;
+    margin: auto  1rem;
+    .card-category {
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      height: 20rem; 
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      gap: 0.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      p {
+        font-size: 1.25rem;
+        color: #f6f5f5;
+        margin: 0;
+      }
+      span {
+        display: inline-block;
+        margin-top:1rem; 
+        padding: 0.5rem 1rem; 
+        background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+        color: white;
+        border-radius: 10px;
+        transition: background-color 0.2s;
+      }
+      
+    }
+    .category-muebles {
+      background-image: linear-gradient(#00000080, #00000080), url(../img/sala-cuero.png);
+      background-size: cover; 
+      background-position: center;
+    }
+    
+    .category-alcobas {
+      background-image: linear-gradient(#00000080, #00000080), url(../img/come-moderno.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .category-comedores {
+      background-image: linear-gradient(#00000080, #00000080), url(../img/comedor-clas.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+  }
 }
 
  /* Estilos maejores productos*/

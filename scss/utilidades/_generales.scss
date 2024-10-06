@@ -15,7 +15,7 @@
   .titulo-1{
     font-size: 25px;
     text-align: center;
-    margin: 2rem auto;
+    margin:  auto;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -24,7 +24,8 @@
     .container-inicio{
       background: linear-gradient(to bottom right, rgba(15, 15, 14, 0.412), #bbc5c595);
       max-width: 100%;
-      margin: 0 auto;
+      margin: auto;
+    
       
       .inicio{
         display: flex;
@@ -34,31 +35,31 @@
 
         h1{
           font-size: 25px;
-          margin-left: 5rem;
+          margin-left:5rem;
           padding: 0;
         }
         
         img{
-       width: 150px;
-       margin-left: 10px;
+        width: 150px;
+         margin: 5px 15px;
         }
         
       } 
     .container-logo{
-     display: flex;
      width: 20%;
      align-items: center;
     } 
-      .contenedor-soporte{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+     .contenedor-soporte{
+     
       margin: auto;
-      width: 50%;
+      width: 150px;
      }  
-  .container-usuario {
-    display:flex;
-    cursor: pointer;
+     .container-usuario {
+      display: flex;
+      flex-direction:row;
+      align-items: center; 
+      gap: 10px; 
+    
   .fa-user{
    font-size: 15px; 
    color: #141313;
@@ -73,7 +74,8 @@
    }
     .contenedor-carrito{
      gap: 1rem;
-     margin: auto 1rem;
+     margin: auto ;
+     margin-right: 30px;
      display: flex;
      flex-direction: column;
     }
@@ -165,57 +167,84 @@
     }
   }
 
-  
-.footer{
+  .footer {
     padding: 0;
     height: auto;
-    .container-footer{
-      width: $anchos;
+    background: linear-gradient(to bottom right, rgba(15, 15, 14, 0.412), #4b4f4f95);
+    .container-footer {
+      width: 100%;
       height: auto;
       margin: 0;
-      background: linear-gradient(to bottom right, rgba(15, 15, 14, 0.412), #4b4f4f95);
-      
-    .footer-row{
-      display: flex;
-        
-  .menu-footer{
-    width: 100%;
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        text-align: center;
+        .menu-footer {
+          flex-basis: 25%; 
+          padding: 0 1rem; 
+          margin-top: 10px;
+           
+   h4 {
+    font-size: 20px;
+    color: #fcfbfb;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #dbd4d4;
+    display: inline-block;
+  }
+  
+  .lista-footer {
+    list-style: none; 
     padding: 0;
-    margin-top: 10px;
-    h4{
-      font-size: 20px;
-      color: #fcfbfb;
-    margin: auto;
-      font-weight: 500;
-      border-bottom: 2px solid #dbd4d4;
-      display: inline-block;
+    margin: 0;
+    li {
+      margin-bottom: 0.5rem;
     }
-    ul li a{
+    a {
       font-size: 18px;
       text-decoration: none;
       color: #f6f1f1e1;
-      display: block;
-      margin-bottom: 0.5rem;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       &:hover {
         color: #fff;
       }
-   }
-   .redes {
-    display: flex;
-    padding-top: 10px;
-    .iconos-redes {
-      color: #ece9e9;
-      font-size: 20px;
-      transition: color 0.3s;     
-       &:hover {
-         color: #090606;
-       }
     }
   }
-  }
+        }
+          .redes {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          padding-top: 10px;
+            
+      .iconos-redes {
+       color: #ece9e9;
+       font-size: 20px;
+       transition: color 0.3s;
+         
+        &:hover {
+        color: #090606;
+       }
+  
+         }
+        }
       }
     }
   }
   
  
+
+
+
+  
+ 
+  
+   
+  
+
+
+
+
+ 
+  

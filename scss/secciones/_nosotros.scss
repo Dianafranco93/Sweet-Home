@@ -86,11 +86,7 @@
   color: #333;
     }
 iframe {
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: $anchos;
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   height: 300px; 
   border-radius: 5px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -122,11 +118,7 @@ iframe {
    button {
     width: 40%;
     padding: 10px;
-<<<<<<< HEAD
     background: $color-button;
-=======
-    background: linear-gradient(45deg, rgb(178, 160, 141), rgba(241, 200, 148, 0.911));
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
     color: #edecdf;
     margin-top: 10px;
     transition: all 0.5s;
@@ -137,11 +129,7 @@ iframe {
     cursor: pointer; 
     transition: background-color 0.3s ease;
     &:hover {
-<<<<<<< HEAD
      background-color: $color-button-hover};
-=======
-      background-color: #050505; }
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
     }
     
   }

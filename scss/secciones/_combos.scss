@@ -1,10 +1,6 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_mediaqueries";
 
-<<<<<<< HEAD
-=======
-/*estilos  combos*/
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 .contenedor-catalogo-combos1 {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -21,11 +17,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-<<<<<<< HEAD
   margin: 1rem auto;
-=======
-  margin: $margenes;
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
   width: 400px;
   h5{
     margin: 10px;
@@ -50,88 +42,17 @@ img {
   button {
     width: 80%;
     padding: 10px 20px;
-<<<<<<< HEAD
     background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
-=======
-    background:$color-button;
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 10px;
     &:hover {
-<<<<<<< HEAD
       background: linear-gradient(45deg, rgb(203, 163, 111), rgba(192, 151, 110, 0.911));
     }
-  }
-   
+  }  
 }
 }
-=======
-      background:$color-button-hover
-  }
-   
-}
-}
-
-.asesoria-combos {
-  display: grid;
-  grid-template-columns: 1fr ; 
-  gap: 20px; 
-  max-width: $anchos; 
-  margin: auto; 
-  padding: 20px;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  .inf-form {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    padding: 20px; 
-    background: linear-gradient(to bottom right, rgba(236, 221, 200, 0.659), #8dadcae6);
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
-   input {
-    width: 75%; 
-    padding: 10px; 
-    margin-bottom: 10px; 
-    border: 1px solid #cccccc96; 
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-   button {
-    width: 40%;
-    padding: 10px;
-    background:$color-button;
-    color: #edecdf;
-    margin-top: 10px;
-    transition: all 0.5s;
-    border-radius: 1rem;
-    border: none; 
-    border-radius: 5px; 
-    font-size: 1rem; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-    &:hover {
-      background-color: #050505; }
-    }
-    
-  }
-  
-}
-}
-
-
-
-
-
-
-
->>>>>>> 93b38fc7e82f660ecec033014817abea03f053de
 
 .asesoria-combos {
   display: grid;
