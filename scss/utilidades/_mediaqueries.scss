@@ -149,20 +149,29 @@
   
 @media (max-width: 900px) {
   .container-categories {
-      grid-template-columns: repeat(2, 1fr); 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  
   .container-categories {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    gap: 2rem; 
+    gap: 1.5rem; 
+    width: 100%;
+
     .card-category {
-      height: 16rem; 
+      width: 90%;
+      max-width: 250px;
+      margin: auto;
+      height:auto; 
       padding: 15px; 
       border-radius: 15px;
+      text-align: center;
   
     p {
       font-size: 1rem; 
@@ -173,8 +182,6 @@
     }
     }
   }
-
-
 }
   
  /* queries mejores productos */
@@ -552,7 +559,8 @@
 
 @media (max-width: 480px) {
   .container-categories {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     .card-category {
       height: 16rem; 
