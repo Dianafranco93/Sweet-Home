@@ -4,16 +4,15 @@
 @media (max-width: 768px) {
   .container-inicio .inicio {
     display: grid; 
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding:  0; 
+    margin:auto ;
     .container-logo {
       width: auto; 
-      h1 {
-        font-size: 20px;
-        grid-column: span 2; 
-        margin: 0; 
-      }
+        h1{
+          width: 100px;
+          margin: auto;
+        }
       }
     .inicio { 
     img {
@@ -25,25 +24,22 @@
   width: 200px; 
   height: auto;
   margin-left: 60px;
-   
   p{
     font-size: 15px
   };
   span{
     font-size: 15px
   };
-
 }
-.contenedor-carrito{
-  width: 150px 
-}
-
 .container-usuario {
   gap: 10px;
   grid-column: span 1; 
   justify-content: center; 
   margin-left: 50%;
   margin-top: 0;
+  .contenedor-carrito{
+    width: 150px 
+  }
      }
    }
   }
@@ -52,8 +48,15 @@
   .container-inicio .inicio {
     display: flex; 
     flex-direction: column; 
-    padding: 1rem 0; 
+    margin: auto;
   .inicio {
+    .container-logo {
+      width: auto; 
+        h1{
+          width: 100px;
+          margin: auto;
+        }
+      }
   img {
     width: 80px;
     margin: 5px 0;
@@ -69,14 +72,15 @@
       font-size: 18px
     };
     .contenedor-carrito{
-      width: 130px 
+      width: 130px;
+      margin-right:0;
       
     }
   }
 
  .container-usuario {
   gap: 10px;
-  grid-column: span 1; 
+  grid-column: span 0; 
   justify-content: center; 
   margin-left: 40%;
   margin-top: 0;
@@ -86,17 +90,20 @@
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .container-servicio {
       grid-template-columns: repeat(4, 1fr); 
-      margin-right:auto;
+      margin:  1rem 1rem;
+     
   }
 }
 
 @media (max-width: 900px) {
   .container-servicio {
       grid-template-columns: repeat(2, 1fr);
-     
+      margin-left: 50px;
+      margin-bottom:1rem;
+      margin-top: 50px;
   }
 }
 
@@ -145,37 +152,21 @@
 }
 }
 }
-/* queriess mas vendidos*/
-  
+
+/* queries categories*/
 @media (max-width: 900px) {
   .container-categories {
-      grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .container-categories {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    grid-template-columns: 1fr;
     gap: 2rem; 
-    .card-category {
-      height: 16rem; 
-      padding: 15px; 
-      border-radius: 15px;
-  
-    p {
-      font-size: 1rem; 
-    }
-    span {
-      padding: 0.4rem 0.9rem;
-      font-size: 0.9rem;
-    }
-    }
   }
-
-
 }
+
   
  /* queries mejores productos */
 @media (max-width: 768px) {
