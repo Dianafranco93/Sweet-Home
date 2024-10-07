@@ -54,73 +54,72 @@
 
 /*estilos mas vendidos*/
 .mas-vendidos {
-  padding: 20px;
-  background-color: #f5f5f5;
-  height: auto;
+  padding: auto; 
+  background-color: #f9f9f9; 
+  text-align: center;
   .titulo-1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom:  1.5rem; 
   }
-
   .container-categories {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    height: auto;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5rem;
+    margin: auto  1rem;
     .card-category {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      height:350px;
-      width: 300px;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      height: 20rem; 
       background-color: #f0f0f0;
       padding: 20px;
-      text-align: center;
-      border-radius: 8px;
+      border-radius: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 2rem;
-      gap:1rem;
-      text-align: center;
-      transition: transform 0.3s ease;
+      gap: 0.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
       &:hover {
-        transform: scale(1.05);
-      }
-      img{
-        object-fit: cover;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       }
       p {
-        font-size: 18px;
-        font-weight: 500;
-        margin: 60px auto ;
-        color: #fcfafa;
+        font-size: 1.25rem;
+        color: #f6f5f5;
+        margin: 0;
       }
       span {
-        color: #f5f7f9;
-        cursor: pointer;
+        display: inline-block;
+        margin-top:1rem; 
+        padding: 0.5rem 1rem; 
+        background: linear-gradient(45deg, rgb(133, 99, 66), rgba(215, 172, 116, 0.911));
+        color: white;
+        border-radius: 10px;
+        transition: background-color 0.2s;
       }
+      
     }
-
     .category-muebles {
-      background-image:linear-gradient(#00000080, #00000080), url(../img/sala-cuero.png);
-      background-size: center;
-      background-position: bottom;
+      background-image: linear-gradient(#00000080, #00000080), url(../img/sala-cuero.png);
+      background-size: cover; 
+      background-position: center;
     }
-
+    
     .category-alcobas {
-      background-image:linear-gradient(#00000080, #00000080), url(../img/come-moderno.jpg);
-      background-size: center;
-      background-position: bottom;
-     }
-    .category-comedores{
-      background-image: linear-gradient(#00000080, #00000080),url(../img/comedor-clas.jpg);
-      background-size: center;
-      background-position: bottom;
-     }
+      background-image: linear-gradient(#00000080, #00000080), url(../img/come-moderno.jpg);
+      background-size: cover;
+      background-position: center;
     }
+    
+    .category-comedores {
+      background-image: linear-gradient(#00000080, #00000080), url(../img/comedor-clas.jpg);
+      background-size: cover;
+      background-position: center;
     }
+    
+  }
+}
 
  /* Estilos maejores productos*/
 .mejores-productos{
