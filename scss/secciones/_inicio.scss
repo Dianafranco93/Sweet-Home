@@ -115,38 +115,36 @@
   }
 }
   
-
  /* Estilos maejores productos*/
-.mejores-productos{
+ .mejores-productos {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center; 
   margin-bottom: 3rem;
-  .container-opciones{
-   display: flex;
-   justify-content: center;
-   gap: 2rem;
-   margin-bottom: 1rem;
-span{
- color: #777;
- background-color:#ffffffee;
- padding: 0.5rem 1rem;
- font-size: 1rem;
- text-transform: capitalize;
- border-radius: 1rem;
- cursor: pointer;
- :hover{
-   background-color:  #b0a7a7;
-   color:$secundario;
-}
-.active{
-background-color:  #ccc3c3;
-color: $secundario;
-}
-}
- }
-}
 
+
+  .container-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    margin:auto; 
+    
+    .mejores {
+      color: #0a0a0a;
+      background-color: rgba(156, 127, 87, 0.792); 
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 1rem;
+      transition: background-color 0.3s ease; 
+      &:hover {
+        background-color:$color-button-hover;
+        transform: scale(1.05);
+    }
+  }
+}
+}
   /*Gallery-mini*/
 .gallery{
  display: grid;

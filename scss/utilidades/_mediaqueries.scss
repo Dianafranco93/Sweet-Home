@@ -174,22 +174,25 @@
     flex-direction: column;
     align-items: center;
   }
-  span {
+  .mejores{
     font-size: 0.9rem; 
     padding: 0.4rem 0.8rem; 
   }
 }
-
 @media (max-width: 480px) {
   .mejores-productos {
-    gap: 1rem; 
-  }
-  .container-opciones {
-    gap: 1rem; 
-  }
-  span {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
+    gap: 0.5rem; 
+    .titulo-1 {
+      font-size: 1.5rem; 
+    }
+    .container-opciones {
+      flex-direction: column; 
+      gap: 0.75rem;
+      .mejores{
+        font-size: 0.85rem; 
+        padding:3px;
+      }
+    }
   }
 }
 
