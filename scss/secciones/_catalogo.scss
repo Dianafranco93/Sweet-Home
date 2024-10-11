@@ -3,8 +3,7 @@
 
   /*Estilos Catalogo*/
  .contenedor-catalogo {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  @include grid-2-columnas-pc;
     margin:3rem 0.5rem;
     gap: 20px;
     max-width: $anchos;
@@ -35,13 +34,11 @@
       }
 
   .infor {
+    @include flex-column-center;
     padding: 15px 20px;
     line-height: 2;
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     margin: auto;
-    align-items: center;
     justify-content: center;
     
     h5{

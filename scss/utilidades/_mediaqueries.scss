@@ -5,15 +5,13 @@
 /*queries inicio conteiner */
 @media (max-width: 768px) {
   .container-inicio .inicio {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
+    @include grid-2-columnas;
     justify-items: center;
     margin:auto ;
     .container-logo {
       width: auto; 
         h1{
-          width: 100px;
-          margin: auto;
+          @include medidas;
         }
       }
     .inicio { 
@@ -54,8 +52,7 @@
     .container-logo {
       width: auto; 
         h1{
-          width: 100px;
-          margin: auto;
+          @include medidas;
         }
       }
   img {

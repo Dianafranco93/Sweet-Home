@@ -65,8 +65,7 @@
 }
 }
 .asesoria {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
+  @include grid-2-columnas;
   gap: 20px; 
   max-width: $anchos; 
   margin: auto; 
