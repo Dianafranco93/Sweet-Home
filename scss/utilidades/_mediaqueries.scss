@@ -1,4 +1,6 @@
 @import "../utilidades/_variables";
+@import "../utilidades/_mixin";
+
 
 /*queries inicio conteiner */
 @media (max-width: 768px) {
@@ -46,8 +48,7 @@
 }
 @media (max-width: 480px) {
   .container-inicio .inicio {
-    display: flex; 
-    flex-direction: column; 
+   @include flex-column-center;
     margin: auto;
   .inicio {
     .container-logo {
@@ -93,8 +94,7 @@
 @media (max-width: 1300px) {
   .container-servicio {
       grid-template-columns: repeat(4, 1fr); 
-      margin:  1rem 1rem;
-     
+      margin:1rem;
   }
 }
 
@@ -171,8 +171,7 @@
  /* queries mejores productos */
 @media (max-width: 768px) {
   .container-opciones {
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
   }
   .mejores{
     font-size: 0.9rem; 
@@ -227,7 +226,7 @@
   /* queries catalogo*/
   @media (max-width: 1024px) {
     .contenedor-catalogo {
-      grid-template-columns: repeat(2, 1fr);
+      @include grid-2-columnas;
       margin-left: 1rem auto;
       padding: 10px 0 40px 0;
     }
@@ -428,7 +427,7 @@
 /* Media Queries combos */
 @media (max-width: 1024px) {
   .contenedor-catalogo-combos1 {
-    grid-template-columns: 1fr 1fr;
+    @include grid-2-columnas; 
     gap: 20px;
 
   img {
@@ -445,11 +444,11 @@
     grid-template-columns: 1fr; 
     gap: 15px;
   img {
-    max-width: 100%; 
+    max-width: $anchos; 
     height: auto;
   }
   .infor {
-    width: 100%; 
+    width: $anchos; 
     margin: auto;
 
    .precio{
@@ -469,18 +468,16 @@
 /* qieries combos */
 @media (max-width: 450px) {
   .contenedor-catalogo-combos1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     gap: 10px;
     padding: 10px;
 
   img {
-    max-width: 100%;
+    max-width: $anchos;
     height: auto;
   }
   .infor {
-    width: 100%;
+    width: $anchos;
     margin: 0;
     .title-combo {
       font-size: 18px;
@@ -489,7 +486,7 @@
       margin: auto;
     }
   button {
-    width: 100%;
+    width: $anchos;
     padding: 8px 16px;
   }
   }
@@ -499,7 +496,7 @@
 
     @media (max-width: 768px) {
       .gallery {
-        grid-template-columns: repeat(2, 1fr); 
+        @include grid-2-columnas;
         grid-template-rows: repeat(3, 15rem); 
       }
       .gallery-img-3 {
@@ -617,11 +614,11 @@
   }
   .inf-form{
     input {
-      width: 100%; 
+      width:$anchos; 
       padding: 8px; 
     }
     button {
-      width: 100%; 
+      width: $anchos; 
     }
   }
   }

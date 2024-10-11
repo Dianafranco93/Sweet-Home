@@ -1,5 +1,7 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_mediaqueries";
+@import "../utilidades/_mixin";
+
 
   /*estilos main contenido*/
    .main-contenedor{
@@ -14,7 +16,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0;
-    margin: auto;
+    margin-left: 30px;
+    margin-top: 1rem;
     .card-servicio {
       display: flex;
       align-items: center;
@@ -33,12 +36,10 @@
       }
     }
     .servicio-content {
-      display: flex;
-      margin: auto;
-      flex-direction: column;
+     display: flex;
+     flex-direction: column;
       margin: auto;
       margin-left: 20px;
-      align-content: center;
       span {
         font-weight: 100;
         font-size: 13px;
@@ -117,17 +118,14 @@
   
  /* Estilos maejores productos*/
  .mejores-productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+  @include flex-column-center;
   margin-bottom: 3rem;
 
 
   .container-opciones {
-    display: flex;
-    justify-content: center;
+    @include flex-column-center;
     gap: 3rem;
-    width: 100%;
+    width: $anchos;
     margin:auto; 
     
     .mejores {
@@ -174,9 +172,7 @@
    margin: 0;
    background-image: linear-gradient(to right, #f9f9f9, #bcb6b6c8);
    .card {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     @include flex-column-center;
      width: 280px;
      height:auto;
      border: 6px solid #615f5fb7;

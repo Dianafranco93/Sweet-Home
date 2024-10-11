@@ -1,5 +1,6 @@
 @import "../utilidades/_variables";
 @import "../utilidades/_mediaqueries";
+@import "../utilidades/_mixin";
 
 .contenedor-catalogo-combos1 {
   display: grid;
@@ -14,9 +15,7 @@ img {
   height: auto;
 }
 .infor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column-center;
   margin: 1rem auto;
   width: 400px;
   h5{
@@ -66,9 +65,7 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   .inf-form {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    @include flex-column-center;
     align-items: center;
     padding: 20px; 
     background: linear-gradient(to bottom right, rgba(236, 221, 200, 0.659), #8dadcae6);

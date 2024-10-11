@@ -1,5 +1,7 @@
   @import "../utilidades/_variables";
   @import "../utilidades/_mediaqueries";
+  @import "../utilidades/_mixin";
+
   
   /*estilos formulario*/
   .contenedor-form {
@@ -34,9 +36,7 @@
      }
     }
     .data{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      @include flex-column-center;
      a{
       color:  rgba(188, 140, 77, 0.783);
       margin-left: 7px;
@@ -47,9 +47,7 @@
     }
   }
   .pago {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
     font-size: 14px;
     color: #555;
     }
